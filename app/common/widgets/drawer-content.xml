@@ -1,0 +1,57 @@
+<ScrollView>
+<grid-layout class="drawer-content" rows="auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="*, auto">
+  <label text="&#xE7F4;" tap="changeTab" class="{{ selectedPage == 0 ? 'selectedico' : 'notselectedico' }}" row="0" col="0"/>
+  <label text="4 Unread" tap="changeTab" class="{{ selectedPage == 0 ? 'selected' : 'notselected' }}" row="0" col="1"/>
+
+  <label text="&#xE22B;" tap="changeTab" class="{{ selectedPage == 1 ? 'selectedico' : 'notselectedico' }}" row="1" col="0" />
+  <label text="10 Pending" tap="changeTab" class="{{ selectedPage == 1 ? 'selected' : 'notselected' }}" row="1" col="1"/>
+
+  <!-- <label text="&#xE24D;" tap="changeTab" class="{{ selectedPage == 2 ? 'selectedico' : 'notselectedico' }}" row="2" col="0" />
+  <label text="1 New" tap="changeTab" class="{{ selectedPage == 2 ? 'selected' : 'notselected' }}" row="2" col="1"/> -->
+
+  <label text="&#xE616;" tap="changeTab" class="{{ selectedPage == 3 ? 'selectedico' : 'notselectedico' }}" row="4" col="0" />
+  <label text="2 Today" tap="changeTab" class="{{ selectedPage == 3 ? 'selected' : 'notselected' }}" row="4" col="1"/>
+
+  <label text="&#xE0BF;" tap="changeTab" class="{{ selectedPage == 4 ? 'selectedico' : 'notselectedico' }}" row="5" col="0" />
+  <label text="1 Forum" tap="changeTab" class="{{ selectedPage == 4 ? 'selected' : 'notselected' }}" row="5" col="1"/>
+
+  <!-- <label text="&#xE7FB;" tap="showSocial" class="{{ selectedPage == 5 ? 'selectedico' : 'notselectedico' }}" row="6" col="0" />
+  <label text="1 Social" tap="showSocial" class="{{ selectedPage == 5 ? 'selected' : 'notselected' }}" row="6" col="1"/> -->
+
+  <label text="&#xE0E0;" tap="showSocial" class="{{ selectedPage == 6 ? 'selectedico' : 'notselectedico' }}" row="7" col="0" />
+  <label text="12 Updates" tap="showSocial" class="{{ selectedPage == 6 ? 'selected' : 'notselected' }}" row="7" col="1"/>
+
+  <!--<label text="" tap="changeTab" class="{{ selectedPage == 0 ? 'selectedico' : 'notselectedico' }}" row="0" col="0" />
+  <label text="" tap="changeTab" class="{{ selectedPage == 0 ? 'selected' : 'notselected' }}" row="0" col="1" />
+
+  <label text="" tap="changeTab" class="{{ selectedPage == 1 ? 'selectedico' : 'notselectedico' }}" row="1" col="0" />
+  <label text="" tap="changeTab" class="{{ selectedPage == 1 ? 'selected' : 'notselected' }}" row="1" col="1"/>
+
+  <label text="" tap="changeTab" class="{{ selectedPage == 2 ? 'selectedico' : 'notselectedico' }}" row="2" col="0" />
+  <label text="" tap="changeTab" class="{{ selectedPage == 2 ? 'selected' : 'notselected' }}" row="2" col="1"/>
+
+  <label text="&#xE5CA;" tap="changeTab" class="{{ selectedPage == 3 ? 'selectedico' : 'notselectedico' }}" row="4" col="0" />
+  <label text="All Caught Up" tap="changeTab" class="{{ selectedPage == 3 ? 'selected' : 'notselected' }}" row="4" col="1"/>
+
+  <label text="" tap="changeTab" class="{{ selectedPage == 4 ? 'selectedico' : 'notselectedico' }}" row="5" col="0" />
+  <label text="" tap="changeTab" class="{{ selectedPage == 4 ? 'selected' : 'notselected' }}" row="5" col="1"/>
+
+  <label text="" tap="showSocial" class="{{ selectedPage == 5 ? 'selectedico' : 'notselectedico' }}" row="6" col="0" />
+  <label text="" tap="showSocial" class="{{ selectedPage == 5 ? 'selected' : 'notselected' }}" row="6" col="1"/>
+
+  <label text="" tap="showSocial" class="{{ selectedPage == 6 ? 'selectedico' : 'notselectedico' }}" row="7" col="0" />
+  <label text="" tap="showSocial" class="{{ selectedPage == 6 ? 'selected' : 'notselected' }}" row="7" col="1"/>-->
+
+  <StackLayout class="hr-light" row="8" colSpan="2"></StackLayout>
+
+  <label text="&#xE7FD;" tap="changeTab" class="notselectedico" row="9" col="0" />
+  <label text="My Profile" tap="changeTab" class="notselected" row="9" col="1"/>
+
+  <label text="&#xE887;" tap="changeTab" class="notselectedico" row="10" col="0" />
+  <label text="Help" tap="changeTab" class="notselected" row="10" col="1"/>
+
+  <label text="&#xE879;" tap="changeTab" class="notselectedico" row="11" col="0" />
+  <label text="Log-out" tap="changeTab" class="notselected" row="11" col="1"/>
+
+</grid-layout>
+</ScrollView>

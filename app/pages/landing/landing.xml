@@ -1,0 +1,131 @@
+<page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="common/widgets"
+  xmlns:notifications="pages/landing/notifications"
+  xmlns:requests="pages/landing/requests"
+  xmlns:alln="pages/landing/allnoti"
+  loaded="loaded">
+
+  <page.actionBar>
+    <action-bar title="iStart">
+      <action-bar.titleView>
+        <StackLayout orientation="horizontal" ios:horizontalAlignment="left" android:horizontalAlignment="left">
+          <!--<android><Image src="res://ic_image_white_24dp" class="action-image" row="0" col="0" /> </android>
+          <ios><Image src="res://ic_image_white" class="action-label" row="0" col="0"/></ios>-->
+          <Image src="res://action" stretch="none" horizontalAlignment="left" verticalAlignment="center" />
+          <Label text="  iStart" class="action-label"  textAlign="left" />
+        </StackLayout>
+      </action-bar.titleView>
+      <action-bar.actionItems>
+        <android>
+          <!-- 3 -->
+          <!--<actionItem android.position="actionBarIfRoom" tap="showSocial" icon="res://ic_forum_ab" />-->
+          <!-- <actionItem android.position="actionBarIfRoom" tap="toggleDrawer" icon="res://ic_resources_ab" /> -->
+          <actionItem android.position="actionBarIfRoom" tap="toggleDrawer" icon="{{icon}}" text="Unread notifications count" />
+        </android>
+        <ios>
+          <action-item icon="res://ic_social_white_ab" ios.position="right" tap="showSocial" text="Social Connect options" />
+          <!--<action-item icon="res://ic_forum_ab" ios.position="right" tap="showSocial" />-->
+          <!-- <action-item icon="res://ic_resources_ab" ios.position="right" tap="toggleDrawer" /> -->
+          <!--<action-item icon="res://ic_filter_9_plus_white" ios.position="right" tap="toggleDrawer" />-->
+          <action-item icon="{{icon}}" ios.position="right" tap="toggleDrawer"  text="Unread notifications count" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+
+  <drawer:rad-side-drawer id="drawer" drawerContentSize="180" drawerLocation="right">
+    <drawer:rad-side-drawer.mainContent>
+
+      <!-- Landing page contents -->
+      <ios>
+        <TabView class="tabview-look" style="font-size: 23;" selectedTabTextColor="#990000" loaded="mainContentLoaded" id="tabView1">
+          <TabView.items>
+            <!--<TabViewItem title="&#xf003; All" >
+              <TabViewItem.view>
+                <alln:allnoti />
+              </TabViewItem.view>
+            </TabViewItem>-->
+            <TabViewItem title="&#xE7F4;" >
+              <TabViewItem.view>
+                <notifications:notifi />
+              </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="&#xE22B;" >
+              <TabViewItem.view>
+                <requests:request />
+              </TabViewItem.view>
+            </TabViewItem>
+            <!-- <TabViewItem title="&#xE24D;" >
+              <TabViewItem.view>
+                <label text="Your Files go here" horizontalAlignment="center" class="size16b" textwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem> -->
+            <TabViewItem title="&#xE616;" >
+              <TabViewItem.view>
+                <label text="Check calendar" horizontalAlignment="center" class="size16b" extwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="&#xE0BF;" >
+              <TabViewItem.view>
+                <label text="Ask Questions" horizontalAlignment="center" class="size16b" extwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="&#xE0E0;" >
+              <TabViewItem.view>
+                <label text="Recent updates go here" horizontalAlignment="center" class="size16b" textwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem>
+          </TabView.items>
+        </TabView>
+      </ios>
+
+      <android>
+        <TabView class="tabview-look" style="font-size: 25;" androidSelectedTabHighlightColor="#990000" loaded="mainContentLoaded" id="tabView1">
+          <TabView.items>
+            <!--<TabViewItem title="&#xf003; All" >
+              <TabViewItem.view>
+                <alln:allnoti />
+              </TabViewItem.view>
+            </TabViewItem>-->
+            <TabViewItem title="&#xE7F4;" >
+              <TabViewItem.view>
+                <notifications:notifi />
+              </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="&#xE22B;" >
+              <TabViewItem.view>
+                <requests:request />
+              </TabViewItem.view>
+            </TabViewItem>
+            <!-- <TabViewItem title="&#xE24D;" >
+              <TabViewItem.view>
+                <label text="Your Files go here" horizontalAlignment="center" class="size16b" textwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem> -->
+            <TabViewItem title="&#xE616;" >
+              <TabViewItem.view>
+                <label text="Check calendar" horizontalAlignment="center" class="size16b" extwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem>
+             <TabViewItem title="&#xE0BF;" >
+              <TabViewItem.view>
+                <label text="Ask Questions" horizontalAlignment="center" class="size16b" extwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="&#xE0E0;" >
+              <TabViewItem.view>
+                <label text="Recent updates go here" horizontalAlignment="center" class="size16b" textwrap="true"/>
+              </TabViewItem.view>
+            </TabViewItem> 
+          </TabView.items>
+        </TabView>
+      </android>
+    </drawer:rad-side-drawer.mainContent>
+    <drawer:rad-side-drawer.drawerContent>
+      <widgets:drawer-content />
+    </drawer:rad-side-drawer.drawerContent>
+  </drawer:rad-side-drawer>
+
+</page>

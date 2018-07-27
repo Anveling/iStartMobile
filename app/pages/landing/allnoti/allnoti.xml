@@ -1,0 +1,34 @@
+<stack-layout loaded="onViewLoaded" unloaded="onViewUnloaded"
+xmlns:lv="nativescript-telerik-ui/listview" >
+  <!-- entirety of the tab's content -->
+  <GridLayout>
+    <lv:RadListView id="lv1" items="{{notificationList}}" row="1" pullToRefresh="true" pullToRefreshInitiated="pullToRefreshInitiated" itemTap="onTap">
+      <lv:RadListView.listViewLayout>
+        <lv:ListViewLinearLayout scrollDirection="Vertical" />
+      </lv:RadListView.listViewLayout>
+      <lv:RadListView.itemTemplate>
+        <grid-layout rows="auto, auto, auto" columns="auto, auto, *" class="topgrid">
+          <label text=" " class="{{class, class}}" col="0" row="0"/>
+          <label text="{{title, title}}" textWrap="true" class="size16b align-center" row="0" col="1" colSpan="2" />
+          <label text="{{ico, ico}}" class="{{class, class}}" col="0" row="1"/>
+          <label text="{{intro, intro}}" textWrap="true" class="size16" row="1" col="1" colSpan="3" />
+          <label text=" " class="{{class, class}}" col="0" row="2"/>
+          <label text='&#xE05E;' textWrap="true" class="newnoti" row="2" col="1" visibility="{{ readFlag != 0 ? 'collapse' : 'visible' }}"/>
+          <label text="{{date, date}}" textWrap="true" class="datelabel" row="2" col="2" colSpan="3"/>
+          <!--<label text=" " textWrap="true" class="hrgreybg" row="3" colSpan="3" />-->
+          <!--<grid-layout row="0" colSpan="3" rows="auto, auto, auto" class="headingRegion" columns="auto, *, auto">
+            <label text="{{ico, ico}}" class="{{class, class}}" col="0" rowSpan="3" row="0"/>
+            <label text="{{title, title}}" textWrap="true" class="{{messageID != 1 ? 'size16b align-center' : 'size16bnew align-center' }}" row="0" col="1" colSpan="2" />
+            <label text=' ' textWrap="true" class="newnoti" row="0" col="2" visibility="{{ messageID != 1 ? 'collapse' : 'visible' }}"/>
+            <label text="{{intro, intro}}" textWrap="true" class="size16" row="1" col="1" colSpan="3" />
+            <label text="{{date, date}}" class="{{messageID != 1 ? 'datelabel' : 'datelabelnew' }}" row="2" colSpan="3"/>-->
+            <!--<label text="{{date, date}}" class="size10" col="2"/>-->
+          <!--</grid-layout>-->
+          <!--<label text="{{intro, intro}}" textWrap="true" class="size16" row="1" colSpan="3" />-->
+          <!--<label text="{{date, date}}" class="{{messageID != 1 ? 'datelabel' : 'datelabelnew' }}" row="2" colSpan="3"/>-->
+          <!--<label text=" " textWrap="true" class="hrgreybg" row="3" colSpan="3" />-->
+        </grid-layout>
+      </lv:RadListView.itemTemplate>
+    </lv:RadListView>
+  </GridLayout>
+</stack-layout>

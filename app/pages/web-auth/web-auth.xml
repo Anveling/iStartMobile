@@ -1,0 +1,6 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" >
+  <page.actionBar>
+    <actionBar title="iStart" />
+  </page.actionBar>
+  <WebView id="myWebView" src="http://www.google.com" height="550"/>
+</Page>

@@ -1,0 +1,246 @@
+@import url('https://fonts.iu.edu/style.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+action-bar {
+  background-color: #990000;
+  color: white;
+}
+
+.action-image {
+    width: 35px;
+    height: 35px;
+    vertical-align: center;
+    background-color: #90A;
+    horizontal-align: center;
+}
+
+.action-label {
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: center;
+}
+
+.tabview-look {
+    background-color: #fff;
+    font-family: MaterialIcons, Material Icons;
+    /*font-family: "fontawesome"; */
+}
+
+.stack {
+    margin-left: 2;
+    margin-right: 2;
+    background-color: #8C9EFF;
+    border-radius: 8;
+}
+
+.alert-level-red {
+    /*font-size:20;*/
+    /*height: 40.5;*/
+    width: 50.5;
+    color: #fff;
+    background-color: #F44336;
+    /*background-color: #E53935;*/
+    /*border-radius: 10.75;*/
+    /*margin-left: 3.75;*/
+    /*margin-top: 3.75; */
+    /*margin-bottom: 3.75;*/
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;   /*Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border-width: 1px;
+    border-color: #F44336;
+    /*vertical-align: center;*/
+    /*horizontal-align: center;*/
+}
+
+.alert-level-green {
+    /*font-size:20;*/
+    /*height: 40.5;*/
+    width: 50.5;
+    color: #fff;
+    background-color:#4CAF50; /*#43A047;*/
+    /*background-color: #CFD8DC;*/
+    /*border-radius: 10.75;
+    margin-left: 12;
+    margin-top: 3.75; 
+    margin-bottom: 3.75;*/
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;   /*Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    /*direction: ltr;*/
+    border-width: 1px;
+    border-color: #4CAF50;
+}
+
+.alert-level-neutral {
+    /*font-size:20;*/
+    /*height: 40.5;*/
+    width: 50.5;
+    color: #fff;
+    background-color:#78909C; /*#607D8B;*/
+    /*background-color: #CFD8DC;*/
+    /*border-radius: 10.75;
+    margin-left: 12;
+    margin-top: 3.75; 
+    margin-bottom: 3.75;*/
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;   /*Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border-width: 1px;
+    border-color: #78909C;
+}
+
+.alert-level-yellow {
+    /*font-size:20;*/
+    /*height: 40.5;*/
+    width: 50.5;
+    color: #fff;
+    background-color:#FBC02D; /*#607D8B;*/
+    /*background-color: #CFD8DC;*/
+    /*border-radius: 10.75;
+    margin-left: 12;
+    margin-top: 3.75; 
+    margin-bottom: 3.75;*/
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;   /*Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    border-width: 1px;
+    border-color: #FBC02D;
+}
+
+.headingRegion {
+    background-color:#CFD8DC;
+}
+
+.size16b {
+    font-size: 13.5;
+    margin-left: 13px;
+    margin-top: 3.75px;
+    margin-bottom: .25px;
+    color: #212121;
+    font-weight : bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.size16bnew {
+    font-size: 13.5;
+    margin-left: 13px;
+    margin-top: 3.75px;
+    margin-bottom: .25px;
+    font-weight : bold;
+    color: #2196F3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.align-center {
+    vertical-align: center;
+    horizontal-align: left;
+}
+
+.size16 {
+    font-size: 13.5;
+    margin-left: 13px;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    margin-top: .25px;
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topgrid {
+    /*background-color:#CFD8DC;*/
+    background-color:#fff;
+    border-bottom-width: 2px;
+    border-color: #ECEFF1;
+}
+
+.size10 {
+    font-size: 10;
+    margin-right: 5;
+    margin-top: 12;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hrgreybg {
+    font-size: 2;
+    background-color:#90A4AE;
+}
+
+.datelabel {
+    font-size: 10;
+    margin-left: 13px;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    /*horizontal-align: left;*/
+}
+
+.newnoti {
+    font-family: MaterialIcons, Material Icons;
+    font-size: 18;
+    color: #448AFF;
+    margin-left: 13px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: .2px;
+}
+
+.datelabelnew {
+    font-size: 10;
+    margin-left: 13px;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    margin-top: .25px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    /*horizontal-align: left;*/
+    color: #2196F3;
+}
+
+.fab-button-android {
+    height: 60;
+    width: 60;
+    margin: 15;
+    background-color: #7D110C;
+    horizontal-align: right;
+    vertical-align: bottom;
+}
+
+.fab-button-ios {
+    height: 60;
+    width: 60;
+    margin: 15;
+    background-color: #7D110C;
+    horizontal-align: right;
+    vertical-align: bottom;
+}

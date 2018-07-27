@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" shownModally="onShownModally" backgroundColor="transparent">
+    <GridLayout class="mainstack" rows="auto, auto" columns="auto" backgroundColor="transparent">
+    <Label text="  " class="avatar-circle-halo" row="0" />
+    <Label text="&#xE7FB;" class="avatar-circle-icon" row="0" />
+    <GridLayout rows="auto, auto, auto, auto, auto" columns="auto" class="headerFooter" row="1">
+        <Label text="Connect with Us" class="headingtxt align-center" row="0"/>
+        <Button text="&#xf099; Twitter" horizontalAlignment="center" tap="moveTo" class="socialbtn" row="1" id="twitter"/>
+        <Button text="&#xf230; Facebook" horizontalAlignment="center" tap="moveTo" class="socialbtn" row="2" id="fb"/>
+        <Button text="&#xf16d; Instagram" horizontalAlignment="center" tap="moveTo" class="socialbtn" row="3" id="insta"/>
+        <Button text="&#xf166; YouTube" horizontalAlignment="center" tap="moveTo" class="socialbtn" row="4" id="youtube"/>
+    </GridLayout>
+    </GridLayout>
+</Page>

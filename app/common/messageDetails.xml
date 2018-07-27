@@ -1,0 +1,50 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" class="pagecss">
+
+    <page.actionBar>
+    <action-bar title="Notifications" id="actionBar">
+      <action-bar.titleView>
+        <NavigationButton icon ="res://ic_back_ab" tap="goBack" automationText="back"/>
+        <StackLayout orientation="horizontal" ios:horizontalAlignment="center" android:horizontalAlignment="left">
+          <Label text="Notification" class="action-label" />
+        </StackLayout>
+      </action-bar.titleView>
+      <action-bar.actionItems>
+        <android>
+          <actionItem android.position="actionBarIfRoom" tap="openBrowser" icon="res://ic_open_in_browser_ab" />
+        </android>
+        <ios>
+          <action-item icon="res://ic_open_in_browser_ab" ios.position="right" tap="openBrowser" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+  <GridLayout class="toplevelgrid" rows="*, auto" columns="*">
+    <ScrollView row="0">
+        <WebView class="msgwebview" src="{{htmlString}}" id="msgWebView"/> 
+    </ScrollView>
+    <GridLayout rows="auto, auto, auto, auto" columns="1*, 1*" row="1" class="actionsDetails" id="actionsDetails">
+        <Button text="&#xf090; Take Action" horizontalAlignment="center" tap="showAction" class="takeactionbtn" col="0" row="0" visibility="{{ !(isItemVisible || singleAction) ? 'visible' : 'collapse' }}" id="acButtonShow"/>
+        <StackLayout orientation="horizontal" col="0" row="0" colSpan="2" visibility="{{ singleAction ? 'visible' : 'collapse' }}">
+          <Button text="{{actionIcon0}}" horizontalAlignment="left" style="margin-right:1px;" textAlignment="left" acLink="{{actionLink0}}" textWrap="true" tap="moveTo" class="acMenuButtons"/>
+          <label text="Action" horizontalAlignment="left" tap="moveTo" textWrap="true" class="acSingleAcLabel" acLink="{{actionLink0}}" id="acLabelShow"/>
+        </StackLayout>
+        <Button text="&#xE5C9;" textWrap="true" horizontalAlignment="right" class="acMenuClose" tap="closeMenu" row="0" col="1" visibility="{{ (isItemVisible && actionLabel0) ? 'visible' : 'collapse' }}" />
+        <StackLayout row="1" col="0" horizontalAlignment="center" class="acButtonStack" visibility="{{ (isItemVisible && actionLabel0) ? 'visible' : 'collapse' }}" id="acStack0">
+          <Button text="{{actionIcon0}}" acLink="{{actionLink0}}" textWrap="true" tap="moveTo" class="acMenuButtons" id="acButton0" />
+          <label text="{{actionLabel0}}" textWrap="true" class="acMenuLabels" id="acLabel0" />
+        </StackLayout>
+        <StackLayout row="1" col="1" horizontalAlignment="center" class="acButtonStack" visibility="{{ (isItemVisible && actionLabel1) ? 'visible' : 'collapse' }}" id="acStack1">
+          <Button text="{{actionIcon1}}" acLink="{{actionLink1}}" textWrap="true" tap="moveTo" class="acMenuButtons" id="acButton1" />
+          <label text="{{actionLabel1}}" textWrap="true" class="acMenuLabels" id="acLabel1" />
+        </StackLayout>
+        <StackLayout row="2" col="0" horizontalAlignment="center" class="acButtonStack" visibility="{{ (isItemVisible && actionLabel2) ? 'visible' : 'collapse' }}" id="acStack2">
+          <Button text="{{actionIcon2}}" acLink="{{actionLink2}}" textWrap="true" tap="moveTo" class="acMenuButtons" id="acButton2" />
+          <label text="{{actionLabel2}}" textWrap="true" class="acMenuLabels" id="acLabel2" />
+        </StackLayout>
+        <StackLayout row="2" col="1" horizontalAlignment="center" class="acButtonStack" visibility="{{ (isItemVisible && actionLabel3) ? 'visible' : 'collapse' }}" id="acStack3">
+          <Button text="{{actionIcon3}}" acLink="{{actionLink3}}" textWrap="true" tap="moveTo" class="acMenuButtons" id="acButton3" />
+          <label text="{{actionLabel3}}" textWrap="true" class="acMenuLabels" id="acLabel3" />
+        </StackLayout>
+    </GridLayout> 
+  </GridLayout>
+</Page>

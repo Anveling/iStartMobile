@@ -1,0 +1,58 @@
+.drawer-content {
+  background-color: #990000;
+  color: white;
+  padding-top: 20;
+}
+
+.selected {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20;
+    margin-top: 15;
+    margin-left: 2;
+    margin-right: 10;
+    margin-bottom: 10;
+    color: #e4ba4e;
+    vertical-align: center;
+    text-align: left;
+}
+
+.notselected {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20;
+    margin-top: 15;
+    margin-left: 2;
+    margin-right: 10;
+    margin-bottom: 10;
+    color: white;
+    vertical-align: center;
+    text-align: left;
+}
+
+.selectedico {
+    font-family: MaterialIcons, Material Icons;
+    font-size: 24;
+    margin-top: 15;
+    margin-left: 5;
+    margin-right: 2;
+    margin-bottom: 10;
+    color: #e4ba4e;
+    vertical-align: center;
+    text-align: center;
+}
+
+.notselectedico {
+    font-family: MaterialIcons, Material Icons;
+    font-size: 24;
+    margin-top: 15;
+    margin-left: 5;
+    margin-right: 2;
+    margin-bottom: 10;
+    color: white;
+    vertical-align: center;
+    text-align: center;
+}
+
+.drawer-image {
+    width: 60;
+    height: 60;
+}

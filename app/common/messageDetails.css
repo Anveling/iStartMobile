@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.pagecss {
+    background-color: transparent;
+}
+
+.msgwebview {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+    padding-bottom: 5;
+    background-color: white;
+    min-width: 150;
+    min-height: 105;
+}
+
+.toplevelgrid {
+    margin-left: 2;
+    margin-right: 2;
+    margin-top: 2;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.takeactionbtn {
+    font-family: FontAwesome, fontawesome;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #37474F;
+    height: 45;
+    width: 99%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.actionsDetails {
+    background-color: #CFD8DC;
+}
+
+.acMenuClose {
+    font-family: MaterialIcons, Material Icons;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    /*padding: 2;*/
+    font-size: 20px;
+    background-color: transparent;
+    height: 40;
+    width: 40;
+    color: #000;
+    /*border-width: 2;
+    border-color: #78909C;*/
+    text-align: center;
+    vertical-align: top;
+}
+
+.acSingleAcLabel {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #000;
+    text-transform: capitalize;
+    vertical-align: center;
+    text-align: center;
+}
+
+.acMenuButtons {
+    font-family: MaterialIcons, Material Icons;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #455A64;
+    text-align: center;
+}
+
+.acMenuLabels {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    background-color: transparent;
+    color: #000;
+    /*font-weight: bold;*/
+    text-transform: capitalize;
+    vertical-align: center;
+    border-style: none;
+    text-align: center;
+}
+
+.acButtonStack {
+    background-color: transparent;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+Button:highlighted { 
+    background-color: #fff;
+    color: #78909C;
+}
+
+
+.action-image {
+    width: 25;
+    height: 25;
+}
+
+.action-label {
+    font-size: 22;
+    font-weight: bold;
+}
+
+.logo {
+    margin-top: 10;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 10;
+}

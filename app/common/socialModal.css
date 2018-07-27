@@ -1,0 +1,150 @@
+.stack {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+    padding-bottom: 5;
+    background-color: white;
+    min-width: 150;
+    min-height: 105;
+}
+
+Button:highlighted { 
+    background-color: #ac1710;
+    color: white;
+}
+
+
+.action-image {
+    width: 25;
+    height: 25;
+}
+
+.action-label {
+    font-size: 18;
+    font-weight: bold;
+}
+
+.logo {
+    margin-top: 10;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 10;
+}
+
+.mainstack {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 10;
+}
+
+.headingtxt {
+  font-size: 18.5;
+  margin-top: 5;
+  margin-bottom: 10;
+  font-weight : bold;
+}
+
+.subtxt {
+  font-size: 15.5;
+  margin: 5;
+  font-weight : bold;
+}
+
+.paratxt {
+  font-size: 13.5;
+  margin: 5;
+}
+
+.btn {
+  font-family: MaterialIcons, Material Icons;
+  margin: 7;
+    padding: 2;
+    font-size: 10;
+    background-color: #7D110C;
+    color: white;
+    border-radius: 10;
+    width: 25;
+    height: 25;
+}
+
+.size16b {
+    font-size: 15.5;
+    margin: 5;
+    font-weight : bold;
+}
+
+.align-center {
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.socialbtn {
+    font-family: FontAwesome, fontawesome;
+    padding: 10;
+    font-size: 24;
+    background-color: #7D110C;
+    color: white;
+    border-radius: 15;
+    height: 45;
+    width: 160;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 10;
+    margin-top: 2;
+    text-transform: capitalize;
+}
+
+.headerFooter {
+    background-color: white;
+    border-radius: 10;
+    width: 200;
+}
+
+.avatar-circle-icon {
+    /*font-size:20;*/
+    height: 50;
+    width: 50;
+    color: #fff;
+    background-color: #7D110C;
+    border-radius: 30;
+    margin-left: 12;
+    margin-top: 3.75; 
+    margin-bottom: 3.75;
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;   /*Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.avatar-circle-halo {
+    /*font-size:20;*/
+    height: 60;
+    width: 60;
+    color: #fff;
+    background-color: white;
+    border-radius: 30;
+    margin-left: 12;
+    margin-top: 3.75; 
+    margin-bottom: 3.75;
+    text-align: center;
+    font-family: MaterialIcons, Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 42px;   /*Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}

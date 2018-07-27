@@ -1,0 +1,7 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <StackLayout orietation="vertical">
+    <Image src="http://vignette2.wikia.nocookie.net/logopedia/images/b/b8/1000px-Indiana_University_logotype_svg.png/revision/latest?cb=20130524001735" stretch="none" horizontalAlignment="center" />
+    <Button text="Login" horizontalAlignment="center" tap="goToWebAuthPage"/>
+    <Button text="Help" horizontalAlignment="center"/>
+  </StackLayout>
+</Page>
