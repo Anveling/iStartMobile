@@ -22,7 +22,7 @@
     "nativescript-loading-indicator": "^2.2.2",
     "nativescript-localstorage": "^1.1.0",
     "nativescript-orientation": "^1.6.1",
-    "nativescript-plugin-firebase": "^3.12.0",
+    "nativescript-plugin-firebase": "^10.6.3",
     "nativescript-snackbar": "^2.0.1",
     "nativescript-telerik-ui": "^3.0.1",
     "nativescript-theme-core": "^0.2.1",
